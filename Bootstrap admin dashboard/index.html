@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Panel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        .sidebar {
+            width: 220px;
+            height: 100vh;
+            position: fixed;
+            background-color: #343a40;
+            padding-top: 20px;
+        }
+
+        .sidebar a {
+            color: white;
+            display: block;
+            padding: 10px 15px;
+            text-decoration: none;
+        }
+
+        .sidebar a:hover {
+            background-color: #495057;
+        }
+
+        .content {
+            margin-left: 230px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h4 class="text-white text-center">Admin</h4>
+        <a href="#">Dashboard</a>
+        <a href="#">Products</a>
+        <a href="#">Sales</a>
+        <a href="#">Revenue</a>
+        <a href="#">Settings</a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content">
+        <div class="bg-success text-white text-center py-3">
+            <h2>Dashboard</h2>
+        </div>
+
+        <div class="container mt-4">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card text-center">
+                        <div class="card-header bg-primary text-white">Total Products</div>
+                        <div class="card-body"><h3>100000</h3></div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center">
+                        <div class="card-header bg-primary text-white">Sold Products</div>
+                        <div class="card-body"><h3>20000</h3></div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center">
+                        <div class="card-header bg-primary text-white">Revenue</div>
+                        <div class="card-body"><h3>₹100000</h3></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap 5 JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

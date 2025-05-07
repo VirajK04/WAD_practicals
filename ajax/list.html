@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Registered Users</title>
+</head>
+<body>
+  <h2>List of Registered Users</h2>
+  <ul id="userList"></ul>
+
+  <script>
+    const users = JSON.parse(localStorage.getItem('users')) || [];
+    const userList = document.getElementById('userList');
+
+    users.forEach((user, index) => {
+      const li = document.createElement('li');
+      li.textContent = `${index + 1}. Name: ${user.name}, Email: ${user.email}`;
+      userList.appendChild(li);
+    });
+  </script>
+</body>
+</html>
